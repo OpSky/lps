@@ -1,0 +1,31 @@
+
+
+<div id="panel" class="row" *ngIf="montre" [@enterAnimation]>
+<div id="panelContent" class="col-sm-12">
+    <div class="quarterSized col-md-4" *ngIf="motchoisi">
+        <h2 id="wordToTranslate"> {{motchoisi.mot}} </h2>
+        <p id="wordDescription"> {{motchoisi.definition}} </p>
+  </div>
+  <div class="quarterSized col-md-4" [class.col-md-push-4]="motchoisi == undefined">
+  <br />
+  <input type="text" [(ngModel)]="queryString" class="barresearch form-control" placeholder="Mot à rechercher" />
+  <button>
+  <span class="iconesearch glyphicon glyphicon-search"></span>      
+  </button>
+  
+
+ <br />
+    <ul class="words">
+        <li *ngFor="let mot of mots | FilterPipe: queryString" (click)="onSelect(mot)">
+            <span class="badge" [class.selected]="mot == motchoisi" (click)="showLWord()"> {{mot.mot}} </span>
+        </li>
+    </ul>
+  </div>
+  <div class="halfSized col-md-3" *ngIf="wordselected">
+    
+        <img id="tipsVideo-toolBox" class="image" src="http://www.laparoleauxsourds.fr/wp-content/uploads/2017/04/formationlsf.gif">
+    
+  </div>
+</div>
+</div>
+<show-dico [monterBouton]="monterBouton" (click)="showDico()"></show-dico>

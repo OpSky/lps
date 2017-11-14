@@ -1,0 +1,50 @@
+<div>
+    <h3> Complétez les phrases suivantes </h3>
+    <br>
+    <br> 
+    <h4> Glissez le bon mot dans le texte à trou </h4>
+
+    <br>
+    <br>
+
+<div class='wrapper'>
+        <div class="row">
+        <div class='container col-xs-6 phrase' [class.colorDrop1]="drop && gooddrop" [class.colorDrop2]="drop && !gooddrop">Acte {{ajoute}} 
+        <span *ngIf="drop">
+            <span class="glyphicon glyphicon-ok-circle" *ngIf="gooddrop"></span>
+            <span class="glyphicon glyphicon-remove-circle" *ngIf="!gooddrop"></span> 
+        </span>
+        <ul [dragula]='"first-bag"' class="gu-hide" *ngIf="words" [dragulaModel]="words">
+                <li class="proposition " id="{{i}}"   *ngFor="let word of words; let i= index" > {{word}} </li>
+        </ul>
+    </div>
+     </div>
+    
+    <br>
+    <br>
+    <br>
+
+    <div class='container row col-xs-6' >
+    <ul [dragula]='"first-bag"' *ngIf="words" [dragulaModel]="words">
+      <li class="proposition " id="{{i}}"   *ngFor="let word of words; let i= index" > {{word}} </li>
+        
+   
+    </ul>
+    <br>
+    <br>
+    <div id="quizButtonDiv" *ngIf="gooddrop && !finished">
+        <button (click)="nextQuestion()" id="next-question-button" class="quizBtn">Suivant</button>
+    <!--     <button id="prev-question-button" class="quizBtn">Retour</button>
+         <button id="submit-button" style="display:none;" class="quizBtn">Finir</button>
+    --> </div>
+    <div *ngIf="finished">
+        <span class="message"> Exercice terminé </span>
+    </div>
+    </div>
+    <div class="row col-xs-3 col-xs-push-4">
+      
+    </div>
+  </div>
+
+  
+</div>

@@ -1,0 +1,113 @@
+
+/*
+#flip1{
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px 20px;
+    bottom: 0;
+    position: fixed;
+    width:200px;
+    left:40%;
+    bottom: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    padding: 8px 20px;
+    max-width: 200px;
+    background-color: #FFFFFF;
+    color: #9629ba;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+    font-family: 'MyVerveine';
+    font-family: 'MyVerveine' !important;
+    font-size: 40px !important;
+    line-height: 20px !important;
+  }
+  #flip1:hover{
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px 20px;
+    position: fixed;
+    width:200px;
+    left:40%;
+    bottom: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    background-color: #9629ba;
+    color: #FFFFFF;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+  }*/
+
+  .flip1{
+    text-align: center;
+    position: fixed;
+    width:200px;
+    left:40%;
+    top: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    padding: 8px 20px;
+    background-color: #FFFFFF;
+    color: #9629ba;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+    font-family: 'MyVerveine';
+    font-family: 'MyVerveine' !important;
+    font-size: 40px !important;
+    line-height: 20px !important;
+  }
+
+  .flip1:hover{
+    text-align: center;
+    position: fixed;
+    width:200px;
+    left:40%;
+    top: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    padding: 8px 20px;
+    background-color: #9629ba;
+    color: #FFFFFF;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+  }
+  .flip2{
+    text-align: center;
+    position: fixed;
+    width:200px;
+    left:40%;
+    bottom: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    padding: 8px 20px;
+    background-color: #FFFFFF;
+    color: #9629ba;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+    font-family: 'MyVerveine';
+    font-family: 'MyVerveine' !important;
+    font-size: 40px !important;
+    line-height: 20px !important;
+  }
+
+  .flip2:hover{
+    text-align: center;
+    position: fixed;
+    width:200px;
+    left:40%;
+    bottom: 0px;
+    border-radius: 50px;
+    z-index:1006;
+    padding: 8px 20px;
+    background-color: #9629ba;
+    color: #FFFFFF;
+    border: solid #4893B3 1px;
+    cursor: pointer;
+  }
+  .showdico {
+  
+  }
+  @font-face{
+    font-family: 'MyVerveine';
+    src: url('./../policies/Verveine_Corp.otf') format("opentype");
+  }

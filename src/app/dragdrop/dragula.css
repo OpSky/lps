@@ -1,0 +1,105 @@
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  display: none;  
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+div {
+  display: inline;
+}
+.phrase {
+  text-align: left;
+   cursor: -webkit-grab;
+   border-radius: 50px;
+   padding: 5%;
+   
+   width: 130%;
+   background-color: #FFFFFF;
+   color: #9629ba;
+   border: solid #4893B3 1px;
+   font-family: 'Open Sans';
+ 
+   font-size: 40px !important;
+   line-height: 20px !important;
+}
+.proposition {
+  text-align: center;
+  list-style-type: none;
+  cursor: -webkit-grab;
+  border-radius: 50px;
+  padding: 10%;
+  margin: 10%;
+  width: 120%;
+  background-color: #FFFFFF;
+  color: #9629ba;
+  border: solid #4893B3 1px;
+  font-family: 'Georgia';
+ 
+  font-size: 40px !important;
+  line-height: 20px !important;
+}
+
+.glyphicon-ok-circle {
+  /*background-color: green;*/
+  color: green;
+}
+
+.colorDrop1 {
+  color: green;
+  
+}
+
+
+.glyphicon-remove-circle {
+  color: red;
+}
+
+#quizButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+
+.quizBtn{
+  float:left;
+  z-index:1002;
+  padding: 8px 20px;
+  background-color: #FFFFFF;
+  color: #9629ba;
+  border: solid #4893B3 1px;
+  cursor: pointer;
+}
+
+.quizBtn:hover{
+  z-index:1002;
+  padding: 8px 20px;
+  background-color: #9629ba;
+  color: #FFFFFF;
+  border: solid #4893B3 1px;
+  cursor: pointer;
+}
+
+.message {
+  background-color: #FFFFFF;
+  color: #9629ba;
+}
